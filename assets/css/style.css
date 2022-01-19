@@ -9,10 +9,75 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #fff;
-  color: #444;
+  background: #000;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
 }
+.icon{
+  height:100px ;
+  width:100px;
+}
+.kpr{
+  width: 250px;
+  height:230px;
+  padding-right: 60px;
+ left: 0;
+  
+}
+.tm{
+  width: 160px;
+  height:130px;
+ padding-right: 60px;
+ 
+  
+}
+.sangamam{
+  width: 260px;
+  height:170px;
+ 
+}
+.insta{
+  color:#fff;
+  transition: 0.5s;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 2px solid #51d8af;
+  background: #51d8af;
+  border-radius: 5px;
+  margin-right: 20px;
+  
+  
+}
+.insta:hover,.insta:active,.insta:focus {
+  color: #51d8af;
+  outline: none;
+  text-decoration: none;
+  border: 2px solid #51d8af;
+  background: transparent;
+  border-radius: 5px;
+}
+  
+
+
+.tele{
+  color:#fff;
+  text-decoration: none;
+  transition: 0.5s;
+   border: 2px solid #51d8af;
+   background: #51d8af;
+   border-radius: 5px;
+    padding: 5px 10px;
+
+}
+.tele:hover,.tele:active, .tele:focus{
+  color: #51d8af;
+  outline: none;
+  text-decoration: none;
+  border: 2px solid #51d8af;
+  background: transparent;
+  border-radius: 5px;
+}
+ 
 
 a {
   color: #50d8af;
@@ -25,7 +90,17 @@ a:hover, a:active, a:focus {
   outline: none;
   text-decoration: none;
 }
+ .copied{
+  color:#fff; 
+  text-decoration: none;
+  transition: 0.5s;
+}
+.copied:hover{
+  color: #51d8af;
+  outline: none;
+  text-decoration: none;
 
+}
 p {
   padding: 0;
   margin: 0 0 30px 0;
@@ -330,95 +405,170 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-#hero {
-  width: 100%;
-  height: 60vh;
-  position: relative;
-  background: url("../img/hero-carousel/1.jpg") no-repeat;
-  background-size: cover;
-  padding: 0;
-}
-#hero .hero-content {
-  position: absolute;
-  bottom: 0;
-  top: 0;
+/*--------------------------hero------------------*/
+.kpr {
+  width:270px;
+  height: 90px;
+  padding-left: 0px;
+  padding-top: 10px;
   left: 0;
-  right: 0;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+  margin-left: -45px;
+ 
 }
-#hero .hero-content h2 {
-  color: #0c2e8a;
-  margin-bottom: 30px;
-  font-size: 64px;
-  font-weight: 700;
+.tm{
+  width:170px;
+  height: 100px;
+  margin-left: 10px;
 }
-#hero .hero-content h2 span {
-  color: #50d8af;
-  text-decoration: underline;
+.lit{
+  width:130px;
+  height: 110px;
+  left: 0;
+ padding-top: 15px;
+ padding-left: 3px;
+
 }
-@media (max-width: 767px) {
-  #hero .hero-content h2 {
-    font-size: 34px;
-  }
+.sangamam{
+ width:150px;
+  height: 110px;
+  left: 0;
+  margin-left: -13px;
 }
-#hero .hero-content .btn-get-started, #hero .hero-content .btn-projects {
+.btn-get-started{
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 32px;
-  border-radius: 2px;
+  border-radius: 10px;
   transition: 0.5s;
   margin: 10px;
-  color: #fff;
+  color: #000;
+  text-decoration: none;
 }
-#hero .hero-content .btn-get-started {
-  background: #0c2e8a;
-  border: 2px solid #0c2e8a;
+ .btn-get-started {
+  background: #ffc451;
+  border: 2px solid #ffc451;
 }
-#hero .hero-content .btn-get-started:hover {
+.btn-get-started:hover {
   background: none;
-  color: #0c2e8a;
+  color: #ffc451;
 }
-#hero .hero-content .btn-projects {
-  background: #50d8af;
-  border: 2px solid #50d8af;
+
+img{
+  justify-content: center;
 }
-#hero .hero-content .btn-projects:hover {
-  background: none;
-  color: #50d8af;
-}
-#hero .hero-slider {
-  z-index: 8;
-  height: 60vh;
-}
-#hero .hero-slider::before {
-  content: "";
-  background-color: rgba(255, 255, 255, 0.7);
-  position: absolute;
-  height: 100%;
+#hero {
   width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 7;
-}
-#hero .hero-slider .swiper-slide {
+  height: auto;
+  background: url("../img/lit.jpg") top center;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition-property: opacity;
+  position: relative;
 }
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#hero .container {
+  position: relative;
+  padding-top: 10px;
+  text-align: center;
+}
+#hero h1 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+#hero h1 span {
+  color: #ffc451;
+}
+#hero h2 {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+#hero .icon-box {
+  padding: 30px 20px;
+  transition: ease-in-out 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  height: 100%;
+  text-align: center;
+  
+}
+#hero .icon-box i {
+  font-size: 32px;
+  line-height: 1;
+  color: #ffc451;
+
+}
+#hero .icon-box h3 {
+  font-weight: 700;
+  margin: 10px 0 0 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 20px;
+  line-height: 26px;
+}
+#hero .icon-box h3 a {
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+#hero .icon-box h3 a:hover {
+  color: #ffc451;
+}
+#hero .icon-box:hover {
+  border-color: #ffc451;
+}
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 768px) {
+  #hero {
+    height: auto;
+  }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .kpr{
+    margin-right: -95px;
+  }
+  .tm{
+    margin-right: -50px;
+  }
+  .sangamam{
+    margin-right: -15px;
+    width: 160px;
+
+  }
+  .lit{
+    margin-right: -10px;
+  }
+  #hero .container {
+   padding-top: 5px;
+   margin-top: -70px;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Sections
@@ -563,13 +713,13 @@ section {
 }
 #services .box {
   padding: 40px;
-  box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+  box-shadow: 10px 10px 15px rgba(126, 125, 124, 0.89);
   background: #fff;
   transition: 0.4s;
   height: 100%;
 }
 #services .box:hover {
-  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  box-shadow: 0px 0px 30px rgba(225, 229, 240, 0.15);
   transform: translateY(-10px);
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
@@ -605,6 +755,7 @@ section {
   margin-left: 100px;
   margin-bottom: 0;
   line-height: 24px;
+  color: #000;
 }
 @media (max-width: 767px) {
   #services .box .box {
@@ -792,11 +943,14 @@ section {
 /* Testimonials Section
 --------------------------------*/
 #testimonials {
-  padding: 30px 0;
+  padding: 10px 0;
+  height: 50vh;
 }
+
 #testimonials .testimonials-carousel, #testimonials .testimonials-slider {
   overflow: hidden;
 }
+
 #testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px 30px 0 30px;
@@ -820,11 +974,11 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color:#6c8de7;
 }
 #testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: #fff;
   margin: 0;
 }
 #testimonials .testimonial-item .quote-sign-left {
@@ -843,6 +997,7 @@ section {
 #testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
+ 
 }
 #testimonials .swiper-pagination {
   margin-top: 20px;
@@ -865,6 +1020,12 @@ section {
   background: #081e5b;
   background-size: cover;
   padding: 40px 0;
+  
+}
+#call-to-action .insta .tele{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 #call-to-action .cta-title {
   color: #fff;
@@ -874,6 +1035,8 @@ section {
 #call-to-action .cta-text {
   color: #fff;
 }
+
+
 @media (min-width: 769px) {
   #call-to-action .cta-btn-container {
     display: flex;
@@ -943,8 +1106,7 @@ section {
   margin: 0 2px;
 }
 
-/* Contact Section
---------------------------------*/
+
 #contact {
   padding: 30px 0;
 }
@@ -960,17 +1122,17 @@ section {
 }
 #contact .contact-info address, #contact .contact-info p {
   margin-bottom: 0;
-  color: #000;
+  color: #fff;
 }
 #contact .contact-info h3 {
   font-size: 18px;
   margin-bottom: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #999;
+  color: #fff;
 }
 #contact .contact-info a {
-  color: #000;
+  color: #fff;
 }
 #contact .contact-info a:hover {
   color: #50d8af;
@@ -1084,7 +1246,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f2f5f8;
+  background: #000;
   padding: 0 0 30px 0;
   font-size: 14px;
 }
